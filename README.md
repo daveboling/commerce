@@ -28,4 +28,4 @@ commerce
 David D. Boling
 
 ### View Project Website
-<a href="inventory.daviddboling.com">Go here</a>
+<a href="http://inventory.daviddboling.com">Go here</a>
