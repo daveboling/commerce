@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Your request data
+	link(rel="stylesheet", href="/css/styles.css")
+body
+	nav
+		ul
+			li: a(href="/") Home
+			li: a(href="/about") About
+			li: a(href="/faq") FAQ
+			li: a(href="/items/new") Add Item
+			li: a(href="/items") Current List
+	.wrapper
+		h1 Item Selection
+		table
+			tr
+			th Name
+			th Dimensions
+			th Weight
+			th Color
+			th Quantity
+			th MSRP
+			th % Off
+			th Item Cost
+				tr
+					td= item.name
+					td #{item.dimensions.l} x #{item.dimensions.w} x #{item.dimensions.h}
+					td= item.weight
+					td(style="background-color: #{item.color}")
+					td= item.quantity
+					td= item.msrp
+					td= item.percentOff
+					td= item.cost()
+		form(method="post" action="/items/#{item._id}/delete")
+			button Delete
