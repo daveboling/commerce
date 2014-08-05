@@ -1,17 +1,5 @@
-<!DOCTYPE html>
-html(lang="en")
-head
-	meta(charset="UTF-8")
-	title Your request data
-	link(rel="stylesheet", href="/css/styles.css")
-body
-	nav
-		ul
-			li: a(href="/") Home
-			li: a(href="/about") About
-			li: a(href="/faq") FAQ
-			li: a(href="/items/new") Add Item
-			li: a(href="/items") Current List
+extends ../shared/template
+block content
 	.wrapper
 		h1 Item Selection
 		table
@@ -33,5 +21,7 @@ body
 					td= item.msrp
 					td= item.percentOff
 					td= item.cost()
-		form(method="post" action="/items/#{item._id}/delete")
+		form(method="post" action="/items/#{item._id}")
+			//This will override the form method above
+			input(type="hidden", name="_method" value="delete")
 			button Delete
