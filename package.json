@@ -1,6 +1,6 @@
 {
-  "name": "property-manager",
-  "version": "0.0.0",
+  "name": "commerce",
+  "version": "0.1.0",
   "description": "this is a property management app.",
   "main": "app/index.js",
   "bin": {
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bchiatt/property-manager.git"
+    "url": "https://github.com/bchiatt/commerce.git"
   },
-  "author": "Brian Hiatt <brian.hiatt41@gmail.com>",
-  "contributor": "Sarah M. Pearson <sarahp@me.com>",
+  "author": "David D. Boling <daviddboling@gmail.com>",
+  "contributor": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bchiatt/property-manager/issues"
+    "url": "https://github.com/kadowki/commerce/issues"
   },
-  "homepage": "https://github.com/bchiatt/property-manager",
+  "homepage": "https://github.com/kadowki/commerce",
   "config": {
     "blanket": {
       "pattern": "/app/"
