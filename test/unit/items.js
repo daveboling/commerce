@@ -86,7 +86,7 @@ describe('Item', function() {
     it('should delete a specific based on its id', function(done){
       var id = couch._id;
 
-      Item.deleteByID(id, function(){
+      Item.deleteById(id, function(){
         Item.all(function(item){
           expect(item.length).to.equal(2);
           done();
